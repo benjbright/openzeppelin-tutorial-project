@@ -1,0 +1,18 @@
+{
+  "name": "openzeppelin-tutorial-project",
+  "version": "1.0.0",
+  "description": "Walk through of the OpenZeppelin tutorial project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ben Bright",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.1.0",
+    "@openzeppelin/contracts": "^4.7.0",
+    "ethers": "^5.6.9",
+    "hardhat": "^2.10.0"
+  }
+}

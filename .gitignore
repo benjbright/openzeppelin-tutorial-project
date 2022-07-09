@@ -1,3 +1,6 @@
+# Compiled artifacts directory
+artifacts
+
 # Logs
 logs
 *.log
