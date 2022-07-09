@@ -1,5 +1,6 @@
 async function main() {
-  const accounts = await ethers.providers.listAccounts()
+  // Retrieve accounts from the local node
+  const accounts = await ethers.provider.listAccounts()
   console.log(accounts)
 }
 
