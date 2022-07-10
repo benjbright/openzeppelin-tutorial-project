@@ -1,4 +1,5 @@
-const { ethers } = require("ethers")
+// const { ethers } = require("ethers")
+// NOTE - run script would not work with this line included?
 
 async function main() {
   // Retrieve accounts from the local node
@@ -13,6 +14,13 @@ async function main() {
   //   Call the retrieve() function of the deployed Box contract
   const value = await box.retrieve()
   console.log(`Box value is: ${value.toString()}`)
+
+  // Send a transaction to store a new value in the Box
+  await box.store(23)
+
+  // Call the retrieve function of the deployed Box contract
+  const newValue = await box.retrieve()
+  console.log(`New Box value is ${newValue.toString()}`)
 }
 
 main()
