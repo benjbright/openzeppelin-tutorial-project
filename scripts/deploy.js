@@ -6,6 +6,9 @@ async function main() {
   const box = await Box.deploy()
   await box.deployed()
   console.log(`Box deployed to: ${box.address}`)
+
+  const accounts = await ethers.provider.listAccounts()
+  console.log(accounts)
 }
 
 main()
@@ -17,5 +20,6 @@ main()
 
 // Note local blockchains do not persist their state - if closed then need to redeploy contract
 // Run the local blockchain in another terminal
-
-// 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
+// 0x5FbDB2315678afecb367f032d93F642f64180aa3
+// Need to explicitly set the network for hardhat to connect to
+// Otherwise will default to a new ephemeral network which Box contract wouldn't be deployed to

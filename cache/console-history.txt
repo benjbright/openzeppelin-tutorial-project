@@ -1,1 +1,30 @@
+cd Projects
+clear
+cd openzeppelin-tutorial-project
+node scripts/index.js
+npx hardhat run --network localhost scripts/index.js
+npx hardhat run --network localhost ./scripts/index.js
+(await box.retrieve()).toString()
+await box.retrieve()
+await box.store(42)
+const box = await Box.attach('0x5FbDB2315678afecb367f032d93F642f64180aa3')
+const Box = await ethers.getContractFactory('Box')
+clear
+npx hardhat run ./scripts/index.js
+(await box.retrieve()).toString()
+await box.retrieve()
+npx hardhat run --network localhost ./scripts/index.js
+await box.retrieve()
+npx hardhat run ./scripts/index.js
+npx hardhat run --network localhost ./scripts/index.js
+await box.retrieve()
+(await box.retrieve()).toString()
+npx hardhat run --network localhost ./scripts/index.js
+(await box.retrieve()).toString()
+await box.retrieve()
+await retrieve()
+await box.store(42)
+await box.retrieve()
+await box.store
+const box = await Box.attach('0xe7f1725e7734ce288f8367e1bb143e90bb3f0512')
 const Box = await ethers.getContractFactory('Box');
