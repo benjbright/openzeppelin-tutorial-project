@@ -1,6 +1,9 @@
 # Compiled artifacts directory
 artifacts
 
+#secrets.json file
+secrets.json
+
 # Logs
 logs
 *.log

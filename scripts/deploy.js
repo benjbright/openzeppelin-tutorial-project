@@ -23,4 +23,5 @@ main()
 // Need to explicitly set the network for hardhat to connect to
 // Otherwise will default to a new ephemeral network which Box contract wouldn't be deployed to
 
-// 0x5FbDB2315678afecb367f032d93F642f64180aa3
+// Box.sol contract deployed to Rinkeby test network
+// 0x4BE5790B3Cd1C226Af06460227ee32922D241074

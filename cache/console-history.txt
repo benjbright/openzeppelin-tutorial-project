@@ -1,3 +1,11 @@
+npx hardhat run --network rinkeby scripts/deploy.js
+(await ethers.provider.getBalance(accounts[0])).toString()
+accounts = await ethers.provider.listAccounts()
+clear
+npx hardhat console --network rinkeby
+npx hardhat run --network localhost ./scripts/deploy.js
+(await ethers.provider.getBalance(accounts[0])).toString()
+accounts = await ethers.provider.listAccounts()
 npx hardhat run --network localhost ./scripts/deploy.js
 npx hardhat run --network localhost ./scripts/index.js
 (await box.retrieve()).toString()
