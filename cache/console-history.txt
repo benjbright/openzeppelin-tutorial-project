@@ -1,3 +1,11 @@
+(await box.retrieve()).toString()
+await box.increment()
+const box = await BoxV2.attach('0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e')
+const BoxV2 = await ethers.getContractFactory('BoxV2')
+npx hardhat run --network localhost scripts/upgrade_box.js
+(await box.retrieve()).toString()
+const box = await Box.attach('0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0')
+const Box = await ethers.getContractFactory('BoxNew')
 npx hardhat run --network rinkeby scripts/deploy.js
 (await ethers.provider.getBalance(accounts[0])).toString()
 accounts = await ethers.provider.listAccounts()
