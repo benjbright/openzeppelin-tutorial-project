@@ -8,6 +8,7 @@ async function main() {
     BoxV2
   )
   console.log("BoxNew upgraded!")
+  console.log("New upgraded contract issued!")
 }
 
 main()
